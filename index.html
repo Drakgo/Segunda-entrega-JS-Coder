@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro Hospitalario</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Atención Médica</h1>
+    <form id="registroForm">
+      <input type="text" id="nombre" placeholder="Nombre completo" required />
+      <input type="number" id="edad" placeholder="Edad" required />
+      <select id="especialidad"></select>
+      <button type="submit">Solicitar Atención</button>
+    </form>
+
+    <button id="borrarTodo">Eliminar todas las solicitudes</button>
+
+    <h2>Solicitudes Registradas</h2>
+    <ul id="listaSolicitudes"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
